@@ -1,0 +1,35 @@
+:root {
+  --fg:#ECEFF4; 
+  --fg-dim:#D8DEE9; 
+  --fg-strong:#FFFFFF;
+  --bg:#0f131a; 
+  --panel:#141924; 
+  --panel2:#1a2130; 
+  --accent:#4C79FF; 
+  --chip:#263146;
+  --btn-fg:#FFFFFF; /* ボタン文字色用 */
+}
+
+/* ボタンの文字色を明るくしてコントラストUP */
+.btn-row .stButton>button,
+.stDownloadButton>button {
+  width:100%;
+  min-height:42px;
+  background:#263146;
+  color:var(--btn-fg);
+  border-radius:10px;
+  border:1px solid #344561;
+  font-weight:700;
+}
+
+/* プレイヤー名の表示色を強化 */
+.picker-panel label, .picker-panel span {
+  color: var(--fg-strong) !important;
+  font-weight: 700;
+}
+
+/* 既存のパネルや背景色などは元デザインを維持 */
+body, .main {
+  background-color: var(--bg);
+  color: var(--fg);
+}
